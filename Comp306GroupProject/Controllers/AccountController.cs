@@ -46,7 +46,7 @@ namespace Comp306GroupProject.Controllers
                 if (result.Succeeded)
                 {
                     await signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("index", "home");
+                    return RedirectToAction("login", "account");
                 }
 
                 // If there are any errors, add them to the ModelState object

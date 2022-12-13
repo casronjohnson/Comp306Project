@@ -1,4 +1,7 @@
-﻿<div class="job-post-company pt-120 pb-120">
+﻿<h1> <-- Note -- Sample Job Page that display jobs a candidate can apply for</h1>
+<h1>Click on the Apply button to see job detail. Candidate can the apply for a job --></h1>
+
+<div class="job-post-company pt-120 pb-120">
     <div class="container">
         <div class="row justify-content-between">
             <!-- Left Content -->
@@ -21,7 +24,7 @@
                         </div>
                     </div>
                     <div class="items-link items-link2 f-right">
-                        <a href="job_details.html">Full Time</a>
+                        <a asp-controller="job" asp-action="details">Full Time</a>
                         <span>7 hours ago</span>
                     </div>
                 </div>
@@ -36,7 +39,7 @@
                                 <h4>Full Stack Developer</h4>
                             </a>
                             <ul>
-                                <li>Airbnb</li>
+                                <li style="width:130px">Airbnb</li>
                                 <li><i class="fas fa-map-marker-alt"></i>Toronto, Ontario</li>
                                 <li>$80000 - $95000</li>
                             </ul>

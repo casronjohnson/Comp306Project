@@ -57,3 +57,20 @@ body {
         font-size: 16px;
     }
 }
+
+ul-space {
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 100%;
+    background: #cacaca;
+    margin: 0;
+    padding: 0;
+}
+
+li-space {
+    display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+    background: #fafafa;
+}

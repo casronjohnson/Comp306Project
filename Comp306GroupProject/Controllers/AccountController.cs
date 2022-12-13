@@ -92,7 +92,8 @@ namespace Comp306GroupProject.Controllers
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();
-            return RedirectToAction("index", "home");
+            //return RedirectToAction("index", "home");
+            return View();
         }
 
         [HttpGet]

@@ -2,7 +2,15 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
+<div class="p-3 mb-2 bg-info text-dark text-center">
     <h1 class="display-4">Welcome</h1>
     <p>COMP306 Final Project</p>
+
+    
+</div>
+
+<div>
+    
+    <span class="link_job"><a asp-controller="JobOffers" asp-action="Index" class="btn btn-primary">JobOffers List</a></span>
+    <span class="link_job"><a asp-controller="Candidates" asp-action="Index" class="btn btn-primary">Candidates List</a></span>
 </div>

@@ -1,4 +1,6 @@
-﻿<!-- job post company Start -->
+﻿@model Comp306GroupProject.Models.Job
+
+<!-- job post company Start -->
 <div class="job-post-company pt-120 pb-120">
     <div class="container">
         <div class="row justify-content-between">
@@ -12,12 +14,12 @@
                         </div>
                         <div class="job-tittle">
                             <a href="#">
-                                <h4>Digital Marketer</h4>
+                                <h4>@Model.JobTitle</h4>
                             </a>
                             <ul>
-                                <li>Creative Agency</li>
+                                <li>@Model.CompanyName</li>
                                 <li><i class="fas fa-map-marker-alt"></i>Toronto, Ontario</li>
-                                <li>$65000 - $70000</li>
+                                <li>@Model.Salary</li>
                             </ul>
                         </div>
                     </div>
@@ -72,15 +74,15 @@
                         <li>Posted date : <span>12 Aug 2019</span></li>
                         <li>Location : <span>New York</span></li>
                         <li>Vacancy : <span>02</span></li>
-                        <li>Job nature : <span>Full time</span></li>
-                        <li>Salary :  <span>$7,800 yearly</span></li>
+                        <li>Job nature : <span>@Model.JobNature</span></li>
+                        <li>Salary :  <span>@Model.Salary</span></li>
                         <li>Application date : <span>12 Sep 2020</span></li>
                     </ul>
                     <div class="apply-btn2">
                         <a href="#" class="btn">Apply Now</a>
                     </div>
                 </div>
-                <div class="post-details4  mb-50">
+@*                <div class="post-details4  mb-50">
                     <!-- Small Section Tittle -->
                     <div class="small-section-tittle">
                         <h4>Company Information</h4>
@@ -92,7 +94,7 @@
                         <li>Web : <span> creativeagency.com</span></li>
                         <li>Email: <span>creativeagency@gmail.com</span></li>
                     </ul>
-                </div>
+                </div>*@
             </div>
         </div>
     </div>

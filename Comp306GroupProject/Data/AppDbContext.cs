@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Comp306GroupProject.Models;
 
 namespace Comp306GroupProject.Data
 {
@@ -9,5 +10,6 @@ namespace Comp306GroupProject.Data
         {
 
         }
+        public DbSet<Comp306GroupProject.Models.Job> Job { get; set; }
     }
 }

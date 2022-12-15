@@ -1,6 +1,9 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace Comp306GroupProject.Models
 
 {
+    [Keyless]
     public partial class JobOffer
     {
         public int JobId { get; set; }

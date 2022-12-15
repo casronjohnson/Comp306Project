@@ -1,0 +1,55 @@
+﻿@model Comp306GroupProject.Models.JobCandidate
+@{
+	ViewData["Title"] = "Details";
+}
+
+<div class="wrap-section">
+    <h1>Details</h1>
+
+    <div>
+        <h4>JobCandidate</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CandidateName)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CandidateName)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CandidateEmail)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CandidateEmail)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CandidateMajor)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CandidateMajor)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CandidateSkill)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CandidateSkill)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CandidateCity)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CandidateCity)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CandidateCountry)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CandidateCountry)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.CandidateId">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>

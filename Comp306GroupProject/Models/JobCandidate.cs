@@ -1,7 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace Comp306GroupProject.Models
 
 {
-    public partial class Candiate
+    [Keyless]
+    public partial class JobCandidate
     {
         public int CandidateId { get; set; }
         public string CandidateName { get; set; }

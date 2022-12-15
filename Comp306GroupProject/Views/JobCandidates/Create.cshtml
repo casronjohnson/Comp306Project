@@ -1,0 +1,59 @@
+﻿@model Comp306GroupProject.Models.JobCandidate
+@{
+	ViewData["Title"] = "Create";
+}
+
+<div class="wrap-section">
+    <h1>Create</h1>
+
+    <h4>JobCandidate</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="CandidateName" class="control-label"></label>
+                    <input asp-for="CandidateName" class="form-control" />
+                    <span asp-validation-for="CandidateName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CandidateEmail" class="control-label"></label>
+                    <input asp-for="CandidateEmail" class="form-control" />
+                    <span asp-validation-for="CandidateEmail" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CandidateMajor" class="control-label"></label>
+                    <input asp-for="CandidateMajor" class="form-control" />
+                    <span asp-validation-for="CandidateMajor" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CandidateSkill" class="control-label"></label>
+                    <input asp-for="CandidateSkill" class="form-control" />
+                    <span asp-validation-for="CandidateSkill" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CandidateCity" class="control-label"></label>
+                    <input asp-for="CandidateCity" class="form-control" />
+                    <span asp-validation-for="CandidateCity" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CandidateCountry" class="control-label"></label>
+                    <input asp-for="CandidateCountry" class="form-control" />
+                    <span asp-validation-for="CandidateCountry" class="text-danger"></span>
+                </div>
+                <div class="form-group btn-center">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+</div>

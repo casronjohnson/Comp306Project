@@ -56,8 +56,8 @@
                     <div class="ml-auto" id="collapsibleNavbar">
                         <ul class="navbar-nav ml-auto">
                             @*If the user is signed-in display Logout link*@
-                            @if (SignInManager.IsSignedIn(User))
-                            {
+@*                            @if (SignInManager.IsSignedIn(User))
+                            {*@
                                 <li class="nav-item">
                                     <form method="post" asp-controller="account" asp-action="logout">
                                         <button type="submit" style="width:auto"
@@ -74,9 +74,9 @@
                                         </button>
                                     </form>
                                 </li>
-                            }
+@*                            }
                             else
-                            {
+                            {*@
                                 <li class="nav-item text-dark">
                                     <a class="nav-link" asp-controller="account" asp-action="register">
                                         Register
@@ -87,7 +87,7 @@
                                         Login
                                     </a>
                                 </li>
-                            }
+@*                            }*@
                         </ul>
                     </div>
 
